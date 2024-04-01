@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+h1{
+    text-align:center;
+    font-size: 2cm;
+    font-weight: bold;
+    color: white;
+
+
+}
+header{
+
+    background-color:transparent;
+    color: #fff;
+    padding: 20px 0; /* Increased padding for better spacing */
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    align-items: center;
+    height:150px;
+    padding-left:550px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    transition: .2s;
+    background-color: crimson;
+   /* background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);*/
+    background-size: cover;
+    background-image: url(https://t4.ftcdn.net/jpg/04/76/55/41/240_F_476554123_k6wQvCArijhhTj82ZtOxqVnELljgiVK5.jpg);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.keyboard_wrapp {
+    max-width: 1008px;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    order: 2;
+}
+
+.row {
+    display: flex;
+}
+
+.keys {
+    width: 60px;
+    height: 60px;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    z-index: 5;
+    color: white;
+    font-weight: bold;
+    font-style:initial;
+    border-radius: 10px;
+
+}
+.keys:hover{
+    height: 62px;
+    background-color:grey;
+}
+
+
+.backspace_key {
+    width: 120px;
+}
+
+.tab_key {
+    width: 90px;
+}
+
+.slash_key {
+    width: 90px;
+}
+
+.caps_lock_key {
+    width: 128px;
+}
+
+.enter_key {
+    width: 120px;
+}
+
+.shift_key {
+    width: 124px;
+}
+
+.space_key {
+    max-width: 600px;
+    width: 100%;
+}
+
+.text {
+    max-width: 1008px;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 0px;
+    border: 10px;
+    outline: 10px;
+    font-size: 26px;
+    background-color:lightgray;
+    padding-left: 10px;
+    transition: .2s;
+    border-color: #000;
+}
+.keys.active {
+    background-color: #333;
+    color:#fff;
+}
+
+.keys.remove {
+    animation: keys_animation 0.5s forwards ;
+}
+
+@keyframes keys_animation {
+    0% {
+        background-color: #333;
+        color: #fff;
+    }
+    100% {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+body.active {
+    background-color: rgb(54,54,54);
+}
+
+.night_mode {
+    width: 80px;
+    height: 30px;
+    background-color: #e6e6e6;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.night_mode.active {
+    background-color: #222222;
+}
+
+.toggle_circle {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(54,54,54);
+    border-radius: 50px;
+    margin: 0 5px;
+    position: absolute;
+    left: 0;
+    transition: .2s;
+}
+
+.toggle_circle.active {
+    left: 60%;
+    background-color: #fff;
+}
+
+.keyboard_wrapp.active {
+    background-color: #585858;
+}
+
+.keys.keys_night {
+    background-color: #3c3c3c;
+    color: #fff;
+}
+
+.text.active {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+.keys.keys_night.active {
+    background-color: #fff;
+    color: #333;
+}
+
+.keys.keys_night.remove {
+    animation: keys_night_animation 0.5s forwards;
+}
+
+@keyframes keys_night_animation {
+    0%{
+        background-color: #fff;
+        color: #000;
+    }
+    100% {
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+.change_light_color {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 150px;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors_input {
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.keyboard_lights {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

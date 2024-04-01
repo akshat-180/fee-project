@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mouseclick()
+        {
+            document.write("button clicked")
+        }
+        function mouse()
+        {
+            document.getElementById("demo").style.color="red";
+
+        }
+        function mous()
+        {
+            document.getElementById("demo").style.color="blue";
+
+        }
+        
+    </script>
+    <center>
+        <button onclick="mouseclick()">click</button>
+    </center>
+<p id="demo" onmouseleave="mous()" onmouseover="mouse()">hello</p>
+</body>
+</html>
